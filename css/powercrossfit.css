@@ -1,0 +1,211 @@
+:root{
+    --greencontainer: rgb(8, 238, 181);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{ /*Para utilizar Rem en vez de Pixeles*/
+    font-size: 62.5%;
+}
+
+
+.login{
+    margin-left: 10px;
+    display: flex;
+    align-self: center;
+    width: 35px;
+    height: 35px;
+}
+.input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+.boton{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+/*.pantalla{
+    display: flex;
+    width: 100vh;
+    height: 90vh;
+    justify-content: center;
+}
+.pantalla .formulario{
+    display: grid;
+    width: 300px;
+    height: 250px;
+    border: 1px solid;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: rgb(0, 110, 255);
+}
+.pantalla .formulario span{
+    margin-top: 10px;
+    color: white;
+}
+.input input{
+    border: 0;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    align-self: center;
+}*/
+
+.training-container{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.training-title{
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px var(--greencontainer) solid;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.days-title{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;   
+    box-shadow: 0rem 0.200rem 0.1875rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-link{
+    transition: all 0.3s;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.nav-link:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    color: white;
+    transform: translateY(-0.1875rem);
+}
+
+.card{
+    margin-top: 10px;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.card:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    transform: translateY(-0.7000rem);
+    box-shadow: 0rem 0.375rem 0.1875rem rgba(59, 56, 56, 0.3);
+    color: black;
+}
+
+.btn{
+    border: 3px var(--greencontainer) solid;   
+    transition: .3s;
+    background-image: linear-gradient(to right, rgb(54, 209, 170) 50%, rgb(255, 255, 255) 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: background-position .6s ease;
+    font-size: 1.7rem;
+}
+
+
+.btn:hover{
+    background-position: left;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    
+}
+
+
+.container-cards{
+    margin-top: 25px;
+    border: 1px var(--greencontainer) solid;
+    font-size: 1.3rem;
+}
+
+.login-buttom{
+    background-color: rgb(54, 209, 170);
+    color: whitesmoke;
+    font-family: 'Roboto', 'sans-serif';
+    border: none;
+    transition: .3s;
+    width: 100px;
+    height: 50px;
+}
+
+.login-buttom:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    transform: translateY(-0.3000rem);
+    
+}
+
+
+.footer-container{
+    background-color: var(--greencontainer);
+    height: 70px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-top: 15px;
+}
+
+
+.body-margin{
+    border-bottom: 2px var(--greencontainer) solid;
+    margin-top: 25px;
+}
+
+.body-Container{
+    margin-top: 25px;
+    border: 2px var(--greencontainer) solid;
+    word-wrap: break-word;
+}
+
+.img-Container{
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 4% 15%;
+    border-radius: 5px;
+}
+
+.p-contents{
+    font-size: 2rem;
+    font-family: 'Roboto', 'sans-serif';
+    padding: 2.5rem 5rem;
+    text-align: justify;
+}
+
+
+.title-contents{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
