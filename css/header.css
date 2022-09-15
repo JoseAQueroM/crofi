@@ -1,0 +1,54 @@
+:root{
+    --greencontainer: rgb(8, 238, 181);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{ /*Para utilizar Rem en vez de Pixeles*/
+    font-size: 62.5%;
+}
+
+
+/*NAVBAR*/
+
+.nav-link{
+    transition: all 0.3s;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.nav-link:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    color: white;
+    transform: translateY(-0.1875rem);
+}
+
+.nav-container{
+    font-size: 1.7rem; 
+    margin-right: 1.5rem;
+}
+
+/* BOTON DE LOGIN */
+
+
+.login-buttom{
+    background-color: rgb(54, 209, 170);
+    color: whitesmoke;
+    font-family: 'Roboto', 'sans-serif';
+    border: none;
+    transition: .3s;
+    width: 100px;
+    height: 50px;
+    font-size: 1.7rem;
+}
+
+.login-buttom:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    transform: translateY(-0.3000rem);
+    
+}

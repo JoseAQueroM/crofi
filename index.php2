@@ -1,0 +1,35 @@
+<?php
+
+$servername = "localhost";
+$database = "powercrossfit";
+$username = "root";
+$password = "";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+function buscar($conn){
+    
+        $id_usuario = $_POST['usuario'];
+        if( $id_usuario == "%"){
+            $busqueda = "SELECT U.nombre , P.peso , P.brazo, P.pecho, P.cintura, P.cadera, P.pierna 
+                     from usuarios U, peso_usuario P where U.id = P.usuario_id " ;
+        }else {
+            $busqueda = "SELECT U.nombre , P.peso , P.brazo, P.pecho, P.cintura, P.cadera, P.pierna 
+                     from usuarios U, peso_usuario P where U.id = P.usuario_id and U.id = $id_usuario" ;}
+        if ($result = mysqli_query($conn,$busqueda)) {
+            return   $result;         
+        }
+    }
+function insertar($conn,$usuario,$peso,$brazo,$pecho,$cintura,$cadera,$muslo){
+    $registro= "insert into peso_usuario  ( usuario_id, peso , brazo, pecho, cintura, cadera, pierna) values ($usuario,$peso,$brazo,$pecho,$cintura,$cadera,$muslo)";
+    if (($insert = mysqli_query($conn,$registro)) === false) {
+        die(mysqli_error($conn));  
+    }else 
+     return "Registro Con exito";
+}
+?>
