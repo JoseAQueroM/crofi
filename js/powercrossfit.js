@@ -19,24 +19,57 @@ hideTextBtn5.addEventListener('click', mostrarTexto5);
 function mostrarTexto(){
     hideText.classList.toggle('showText');
    
+    if(hideText.classList.contains('showText')){
+        hideTextBtn.innerHTML = 'Ocultar texto'
+    }   else {
+        hideTextBtn.innerHTML = 'Leer mas'
+    }
+    
+
 }
 
 function mostrarTexto2(){
     hideText2.classList.toggle('showText');
+
+    if(hideText2.classList.contains('showText')){
+        hideTextBtn.innerHTML = 'Ocultar texto'
+    }   else {
+        hideTextBtn.innerHTML = 'Leer mas'
+    }
+    
 }
 
 function mostrarTexto3(){
     hideText3.classList.toggle('showText');
 
+    if(hideText3.classList.contains('showText')){
+        hideTextBtn.innerHTML = 'Ocultar texto'
+    }   else {
+        hideTextBtn.innerHTML = 'Leer mas'
+    }
+    
+
 }
 
 function mostrarTexto4(){
     hideText4.classList.toggle('showText');
+
+    if(hideText4.classList.contains('showText')){
+        hideTextBtn.innerHTML = 'Ocultar texto'
+    }   else {
+        hideTextBtn.innerHTML = 'Leer mas'
+    }
+    
 }
 
 function mostrarTexto5(){
     hideText5.classList.toggle('showText');
+
+    if(hideText5.classList.contains('showText')){
+        hideTextBtn.innerHTML = 'Ocultar texto'
+    }   else {
+        hideTextBtn.innerHTML = 'Leer mas'
+    }
+    
 }
-
-
 
